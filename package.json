@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "lenis": "^1.3.21",
     "lucide-vue-next": "^1.0.0",
     "nuxt": "^4.4.2",
     "sass": "^1.98.0",

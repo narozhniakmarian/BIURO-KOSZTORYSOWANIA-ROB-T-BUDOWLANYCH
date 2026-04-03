@@ -1,49 +1,58 @@
 <script setup>
-const isMobileMenuOpen = ref(false)
+const isMobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {
-    isMobileMenuOpen.value = !isMobileMenuOpen.value
-}
+    isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
 
 // SEO
 useHead({
-  title: 'Biuro Kosztorysowania Robót Budowlanych',
-  meta: [
-    { name: 'description', content: 'Profesjonalne kosztorysowanie robót budowlanych. Szybko, sprawnie i tanio. Opole, ul. Plac Oleandrów 33. Zadzwoń: +48 77 409 85 21.' }
-  ]
-})
+    title: "Biuro Kosztorysowania Robót Budowlanych",
+    meta: [
+        {
+            name: "description",
+            content:
+                "Profesjonalne kosztorysowanie robót budowlanych. Szybko, sprawnie i tanio. Opole, ul. Plac Oleandrów 33. Zadzwoń: +48 77 409 85 21.",
+        },
+    ],
+});
 </script>
 
 <template>
-  <div class="app-main">
-    <AppHeader @toggle-mobile-menu="toggleMobileMenu" />
-    
-    <!-- Mobile Menu Overlay -->
-    <div v-if="isMobileMenuOpen" class="mobile-menu-overlay" @click="toggleMobileMenu">
-        <nav class="mobile-nav" @click.stop>
-            <a href="#hero" @click="toggleMobileMenu">Strona Główna</a>
-            <a href="#o-nas" @click="toggleMobileMenu">O nas</a>
-            <a href="#uslugi" @click="toggleMobileMenu">Usługi</a>
-            <a href="#kontakt" @click="toggleMobileMenu">Kontakt</a>
-        </nav>
+    <div class="app-main">
+        <AppHeader @toggle-mobile-menu="toggleMobileMenu" />
+
+        <!-- Mobile Menu Overlay -->
+        <div
+            v-if="isMobileMenuOpen"
+            class="mobile-menu-overlay"
+            @click="toggleMobileMenu"
+        >
+            <nav class="mobile-nav" @click.stop>
+                <a href="#hero" @click="toggleMobileMenu">Strona Główna</a>
+                <a href="#o-nas" @click="toggleMobileMenu">O nas</a>
+                <a href="#uslugi" @click="toggleMobileMenu">Usługi</a>
+                <a href="#kontakt" @click="toggleMobileMenu">Kontakt</a>
+            </nav>
+        </div>
+
+        <main>
+            <HeroSection />
+            <StickyScrollSection />
+            <ServicesSection />
+            <WhyUsSection />
+            <ContactSection />
+        </main>
+
+        <AppFooter />
     </div>
-
-    <main>
-      <HeroSection />
-      <ServicesSection />
-      <WhyUsSection />
-      <ContactSection />
-    </main>
-
-    <AppFooter />
-  </div>
 </template>
 
 <style lang="scss">
 .app-main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-menu-overlay {
@@ -65,12 +74,12 @@ useHead({
     flex-direction: column;
     gap: 30px;
     align-items: center;
-    
+
     a {
         color: var(--white);
         font-size: 1.8rem;
         font-weight: 700;
-        
+
         &:hover {
             color: var(--accent);
         }
@@ -78,7 +87,11 @@ useHead({
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 </style>
