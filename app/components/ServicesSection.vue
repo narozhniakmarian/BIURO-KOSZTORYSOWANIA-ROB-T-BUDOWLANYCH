@@ -10,28 +10,28 @@ import {
 
 const services = [
     {
-        title: "Kosztorysy Inwestorskie",
-        desc: "Precyzyjne opracowanie przewidywanych kosztów inwestycji przed ogłoszeniem przetargu.",
+        title: "Kosztorysy inwestorskie",
+        desc: "Rzetelna wycena inwestycji na etapie planowania i finansowania.",
         icon: Building,
     },
     {
-        title: "Kosztorysy Ofertowe",
-        desc: "Sporządzanie rzetelnych wycen przez wykonawców ubiegających się o zlecenie.",
+        title: "Kosztorysy ofertowe",
+        desc: "Precyzyjne kalkulacje dla wykonawców i postępowań przetargowych.",
         icon: Calculator,
     },
     {
-        title: "Kosztorysy Powykonawcze",
-        desc: "Ostateczne rozliczenie zrealizowanych prac budowlanych na podstawie faktycznych nakładów.",
+        title: "Kosztorysy powykonawcze",
+        desc: "Rozliczenie robót na podstawie faktycznych obmiarów i zakresu.",
         icon: Clock,
     },
     {
-        title: "Przedmiary Robót",
-        desc: "Zestawienie prac do wykonania przed rozpoczęciem inwestycji na bazie projektu.",
+        title: "Przedmiary robót",
+        desc: "Dokładne zestawienia ilości robót na bazie dokumentacji.",
         icon: Award,
     },
     {
-        title: "Weryfikacja Kosztorysów",
-        desc: "Profesjonalne sprawdzenie poprawności wycen, stawek i obmiarów robót.",
+        title: "Weryfikacja kosztorysów",
+        desc: "Kontrola poprawności stawek, norm i obmiarów.",
         icon: Shield,
     },
 ];
@@ -42,15 +42,22 @@ const services = [
         <div class="section-header container">
             <h2 class="section-title">Nasze Usługi</h2>
             <p class="section-subtitle">
-                Specjalizujemy się w profesjonalnym kosztorysowaniu dla
-                inwestorów i wykonawców.
+                Kosztorysy przygotowane pod decyzje inwestora i wykonawcy.
             </p>
         </div>
 
         <div class="services-grid container">
-            <div v-for="(service, index) in services" :key="index" class="service-card">
+            <div
+                v-for="(service, index) in services"
+                :key="index"
+                class="service-card"
+            >
                 <div class="service-icon">
-                    <component :is="service.icon" size="32" stroke-width="1.5" />
+                    <component
+                        :is="service.icon"
+                        size="32"
+                        stroke-width="1.5"
+                    />
                 </div>
                 <h3 class="service-title">{{ service.title }}</h3>
                 <p class="service-desc">{{ service.desc }}</p>

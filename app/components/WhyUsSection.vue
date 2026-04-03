@@ -4,23 +4,23 @@ import { Zap, Target, DollarSign, Gift } from "lucide-vue-next";
 const benefits = [
     {
         icon: Zap,
-        title: "Szybko",
-        desc: "Realizujemy opracowania w najkrótszym możliwym terminie.",
+        title: "Precyzja",
+        desc: "Szczegółowe obmiary i spójne założenia kosztowe.",
     },
     {
         icon: Target,
-        title: "Sprawnie",
-        desc: "Zapewniamy profesjonalizm i płynną współpracę na każdym etapie.",
+        title: "Terminowość",
+        desc: "Jasny harmonogram i realizacja w uzgodnionym czasie.",
     },
     {
         icon: DollarSign,
-        title: "Tanio",
-        desc: "Oferujemy konkurencyjne ceny przy zachowaniu najwyższej jakości.",
+        title: "Transparentność",
+        desc: "Czytelne pozycje, łatwe do weryfikacji i porównań.",
     },
     {
         icon: Gift,
-        title: "Rabaty",
-        desc: "Dla stałych Klientów oferujemy wysokie rabaty i preferencyjne warunki.",
+        title: "Zgodność formalna",
+        desc: "Dokumenty przygotowane pod wymagania inwestora i instytucji.",
     },
 ];
 </script>
@@ -29,11 +29,11 @@ const benefits = [
     <section id="o-nas" class="why-us-section">
         <div class="container why-us-container">
             <div class="benefits-text animate-fade-up">
-                <h2 class="benefits-title">Dlaczego My?</h2>
+                <h2 class="benefits-title">Dlaczego warto z nami?</h2>
                 <p class="benefits-p">
-                    Nasze opracowania kosztorysów wykonujemy szybko, sprawnie i
-                    tanio. Zaufaj doświadczeniu, które przekłada się na realne
-                    oszczędności w Twoim projekcie budowlanym.
+                    Rzetelne kosztorysy, jasne założenia i terminowa realizacja.
+                    Działamy tak, by Twoje decyzje były oparte na danych, nie
+                    domysłach.
                 </p>
                 <ul class="benefit-list">
                     <li v-for="benefit in benefits" :key="benefit.title">
@@ -57,13 +57,13 @@ const benefits = [
                 style="animation-delay: 0.3s"
             >
                 <div class="cta-card">
-                    <h3 class="cta-card-title">Zacznijmy Współpracę</h3>
+                    <h3 class="cta-card-title">Zamów kosztorys</h3>
                     <p class="cta-card-p">
-                        Skontaktuj się z nami już dziś, aby otrzymać darmową
-                        wycenę swojego kosztorysu.
+                        Prześlij dokumentację — wrócimy z zakresem i terminem
+                        realizacji.
                     </p>
                     <a href="#kontakt" class="btn btn-primary w-full"
-                        >Wyceń moją inwestycję</a
+                        >Wyceń projekt</a
                     >
                 </div>
             </div>

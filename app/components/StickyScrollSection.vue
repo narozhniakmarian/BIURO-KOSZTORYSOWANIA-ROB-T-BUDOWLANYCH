@@ -38,32 +38,32 @@ onBeforeUnmount(() => {
                 <div class="sticky-col">
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1718838541476-d04e71caa347?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&auto=format&fit=crop"
+                            alt="Konstrukcja stalowa w trakcie montażu"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1715432362539-6ab2ab480db2?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=800&auto=format&fit=crop"
+                            alt="Brygada budowlana na placu budowy"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1718601980986-0ce75101d52d?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=800&auto=format&fit=crop"
+                            alt="Narzędzia i przygotowanie robót"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1685904042960-66242a0ac352?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop"
+                            alt="Budowa obiektu przemysłowego"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1719411182379-ffd97c1f7ebf?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=800&auto=format&fit=crop"
+                            alt="Roboty ziemne i przygotowanie terenu"
                         />
                     </figure>
                 </div>
@@ -71,20 +71,20 @@ onBeforeUnmount(() => {
                 <div class="sticky-col sticky-center">
                     <figure class="image-card tall">
                         <img
-                            src="https://images.unsplash.com/photo-1718969604981-de826f44ce15?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=800&auto=format&fit=crop"
+                            alt="Nadzór nad realizacją inwestycji"
                         />
                     </figure>
                     <figure class="image-card tall">
                         <img
-                            src="https://images.unsplash.com/photo-1476180814856-a36609db0493?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=800&auto=format&fit=crop"
+                            alt="Instalacje i prace branżowe"
                         />
                     </figure>
                     <figure class="image-card tall">
                         <img
-                            src="https://images.unsplash.com/photo-1595407660626-db35dcd16609?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&auto=format&fit=crop"
+                            alt="Rusztowania i prace elewacyjne"
                         />
                     </figure>
                 </div>
@@ -92,32 +92,32 @@ onBeforeUnmount(() => {
                 <div class="sticky-col">
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1719547907790-f661a88302c2?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop"
+                            alt="Analiza kosztów i harmonogramu"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1599054799131-4b09c73a63cf?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop"
+                            alt="Prace wykończeniowe wewnątrz"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1719963532023-01b573d1d584?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1501183638710-841dd1904471?w=800&auto=format&fit=crop"
+                            alt="Inspekcja robót na budowie"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1714328101501-3594de6cb80f?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop"
+                            alt="Dokumentacja techniczna projektu"
                         />
                     </figure>
                     <figure class="image-card">
                         <img
-                            src="https://images.unsplash.com/photo-1719554873571-0fd6bf322bb1?w=800&auto=format&fit=crop"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=800&auto=format&fit=crop"
+                            alt="Gotowa bryła budynku"
                         />
                     </figure>
                 </div>

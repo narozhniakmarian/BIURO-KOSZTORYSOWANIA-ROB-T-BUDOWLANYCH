@@ -39,14 +39,21 @@ const contacts = [
             <div class="contact-info animate-fade-up">
                 <h2 class="contact-title">Kontakt</h2>
                 <p class="contact-subtitle">
-                    Masze pytania? Skontaktuj się z nami bezpośrednio lub
-                    odwiedź nasze biuro w Opolu.
+                    Masz pytania? Napisz lub zadzwoń — odpowiemy szybko.
                 </p>
 
                 <div class="contact-grid">
-                    <div v-for="item in contacts" :key="item.title" class="contact-item">
+                    <div
+                        v-for="item in contacts"
+                        :key="item.title"
+                        class="contact-item"
+                    >
                         <div class="contact-icon">
-                            <component :is="item.icon" size="24" stroke-width="2" />
+                            <component
+                                :is="item.icon"
+                                size="24"
+                                stroke-width="2"
+                            />
                         </div>
                         <div class="contact-text">
                             <h4 class="item-title">{{ item.title }}</h4>
@@ -58,40 +65,67 @@ const contacts = [
                 <div class="map-wrapper mt-40">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.513426727237!2d17.9238313!3d50.6738927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47104618e4ae0a4f%3A0x6735e236371f496!2sPlac%20Oleandr%C3%B3w%2033%2C%2045-222%20Opole!5e0!3m2!1spl!2spl!4v1712085000000!5m2!1spl!2spl"
-                        width="100%" height="300" style="
+                        width="100%"
+                        height="300"
+                        style="
                             border: 0;
                             border-radius: 0;
                             box-shadow: 6px 6px 0 #04246f66;
-                        " allowfullscreen="" loading="lazy"></iframe>
+                        "
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
                 </div>
             </div>
 
-            <div class="contact-form-wrapper animate-fade-up" style="animation-delay: 0.2s">
+            <div
+                class="contact-form-wrapper animate-fade-up"
+                style="animation-delay: 0.2s"
+            >
                 <form @submit.prevent="handleSubmit" class="contact-form">
-                    <h3 class="form-title">Wyślij Wiadomość</h3>
+                    <h3 class="form-title">Zapytanie o kosztorys</h3>
                     <div class="input-group">
-                        <label>Imię i Nazwisko</label>
-                        <input type="text" v-model="form.name" required placeholder="Jan Kowalski" />
+                        <label>Imię i nazwisko</label>
+                        <input
+                            type="text"
+                            v-model="form.name"
+                            required
+                            placeholder="Jan Kowalski"
+                        />
                     </div>
                     <div class="input-group">
-                        <label>Adres Email</label>
-                        <input type="email" v-model="form.email" required placeholder="twoj@email.pl" />
+                        <label>Adres email</label>
+                        <input
+                            type="email"
+                            v-model="form.email"
+                            required
+                            placeholder="kontakt@firma.pl"
+                        />
                     </div>
                     <div class="input-group">
-                        <label>Wiadomość</label>
-                        <textarea v-model="form.message" rows="5" required
-                            placeholder="W czym możemy pomóc?"></textarea>
+                        <label>Zakres zlecenia</label>
+                        <textarea
+                            v-model="form.message"
+                            rows="5"
+                            required
+                            placeholder="Typ kosztorysu, termin, lokalizacja..."
+                        ></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary w-full" :disabled="isSubmitting">
-                        <span v-if="!isSubmitting">Wyślij Wiadomość
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-full"
+                        :disabled="isSubmitting"
+                    >
+                        <span v-if="!isSubmitting"
+                            >Wyślij zapytanie
                             <Send size="18" class="ml-2" />
                         </span>
                         <span v-else>Wysyłanie...</span>
                     </button>
 
                     <div v-if="isSubmitted" class="success-message">
-                        Dziękujemy! Wiadomość została wysłana pomyślnie.
+                        Dziękujemy! Wrócimy z wyceną i terminem.
                     </div>
                 </form>
             </div>

@@ -29,22 +29,19 @@ useHead({
             @click="toggleMobileMenu"
         >
             <nav class="mobile-nav" @click.stop>
-                <a href="#hero" @click="toggleMobileMenu">Strona Główna</a>
-                <a href="#o-nas" @click="toggleMobileMenu">O nas</a>
-                <a href="#uslugi" @click="toggleMobileMenu">Usługi</a>
+                <a href="#hero" @click="toggleMobileMenu">Start</a>
+                <a href="#o-nas" @click="toggleMobileMenu">Dlaczego warto</a>
+                <a href="#uslugi" @click="toggleMobileMenu">Zakres usług</a>
                 <a href="#kontakt" @click="toggleMobileMenu">Kontakt</a>
             </nav>
         </div>
 
         <main>
-            <HeroSection />
-            <StickyScrollSection />
-            <ServicesSection />
-            <WhyUsSection />
-            <ContactSection />
+            <NuxtPage />
         </main>
 
         <AppFooter />
+        <CookieConsent />
     </div>
 </template>
 

@@ -73,10 +73,9 @@ onMounted(() => {
                             ]"
                             style="animation-delay: 0.2s"
                         >
-                            Jeśli budujesz lub będziesz budować, jeśli
-                            remontujesz, modernizujesz, i chcesz wiedzieć ile
-                            musisz wydać, a ile możesz zaoszczędzić — to
-                            powinieneś skorzystać z naszych usług!
+                            Rzetelne kosztorysy inwestorskie, ofertowe i
+                            powykonawcze. Precyzyjna wycena, jasne decyzje,
+                            bezpieczeństwo budżetu.
                         </p>
                         <div
                             :class="[
@@ -86,13 +85,13 @@ onMounted(() => {
                             style="animation-delay: 0.4s"
                         >
                             <a href="#kontakt" class="btn btn-primary"
-                                >Skontaktuj się</a
+                                >Zamów kosztorys</a
                             >
                             <a
                                 href="#uslugi"
                                 class="btn btn-outline"
                                 style="border-color: white; color: white"
-                                >Nasze Usługi</a
+                                >Zakres usług</a
                             >
                         </div>
                     </div>
